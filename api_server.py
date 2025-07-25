@@ -1,3 +1,10 @@
+import os
+
+port = int(os.environ.get("PORT", 5000))
+app.run(host='0.0.0.0', port=port)
+
+
+
 from flask import Flask, jsonify
 import json
 from Scrape_data import fetch_and_parse_data, analyze_data
